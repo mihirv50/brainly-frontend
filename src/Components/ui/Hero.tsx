@@ -1,10 +1,18 @@
+import { useState } from "react";
 import Card from "./Card";
+import CreateContentModal from "./CreateContentModal";
 import Topnav from "./Topnav";
 
 const Hero = () => {
+  const [modalOpen, setModalOpen] = useState(true);
+ 
   return (
     <div className="w-[80%] p-6">
-      <Topnav />
+      <CreateContentModal
+        open={modalOpen}
+        onClose={() => setModalOpen(false)}
+      />
+      <Topnav setModalOpen={setModalOpen} />
       <div className="flex gap-6">
         <Card
           type="twitter"

@@ -24,6 +24,7 @@ const defaultStyle = "rounded-md flex items-center justify-center gap-1";
 const Button = (props: ButtonProps) => {
   return (
     <button
+      onClick={props.onClick}
       className={`${variantStyles[props.variant]} ${defaultStyle} ${
         sizeStyles[props.size]
       } `}
