@@ -7,7 +7,7 @@ const Hero = () => {
   const [modalOpen, setModalOpen] = useState(true);
  
   return (
-    <div className="w-[80%] p-6">
+    <div className="w-[80%] p-4">
       <CreateContentModal
         open={modalOpen}
         onClose={() => setModalOpen(false)}

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import CancelIcon from "../../icons/CancelIcon";
 import Input from "./Input";
 import Button from "./Button";

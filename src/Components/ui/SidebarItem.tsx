@@ -20,7 +20,7 @@ const SidebarItem = () => {
   return (
     <div className="flex gap-6 flex-col p-5">
       {sidebaritems.map((s, i) => (
-        <div className="flex items-center gap-5 text-[#555B64]" key={i}>
+        <div className="flex transition-all items-center gap-5 cursor-pointer hover:bg-gray-200 duration-300 rounded p-3 text-[#555B64]" key={i}>
           {s.icon} {s.name}
         </div>
       ))}

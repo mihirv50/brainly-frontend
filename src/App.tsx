@@ -5,7 +5,7 @@ import Hero from "./Components/ui/Hero";
 const App = () => {
   return (
     <>
-      <div className="w-screen h-screen bg-[#F9FBFC] flex">
+      <div className="w-screen h-screen  bg-[#EBEBEB] flex">
         <Sidebar />
         <Hero/>
       </div>
