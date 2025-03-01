@@ -1,4 +1,3 @@
-import React from "react";
 import Sidebar from "./Components/ui/Sidebar";
 import Hero from "./Components/ui/Hero";
 

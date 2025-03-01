@@ -4,7 +4,7 @@ import CreateContentModal from "./CreateContentModal";
 import Topnav from "./Topnav";
 
 const Hero = () => {
-  const [modalOpen, setModalOpen] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
  
   return (
     <div className="w-[80%] p-4">
