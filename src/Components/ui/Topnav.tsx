@@ -5,7 +5,7 @@ import Button from "./Button";
 const Topnav = ({ setModalOpen }) => {
   return (
     <div className="w-full h-[10%] mb-4 flex items-center justify-between p-4">
-      <h1 className="text-2xl font-bold pl-4">All Notes</h1>
+      <h1 className="text-2xl font-extrabold pl-4">All Notes</h1>
       <div className="flex gap-5 pr-2">
         <Button
           text="Share Brain"

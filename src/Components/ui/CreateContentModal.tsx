@@ -2,7 +2,12 @@ import CancelIcon from "../../icons/CancelIcon";
 import Input from "./Input";
 import Button from "./Button";
 
-const CreateContentModal = ({ open, onClose }) => {
+interface IModal{
+  onClose: ()=>void,
+  open: boolean
+}
+
+const CreateContentModal = ({ open, onClose }: IModal) => {
   return (
     <div>
       {open && (

@@ -7,11 +7,12 @@ interface ButtonProps {
   text: string;
   startIcon?: ReactElement;
   onClick?: () => void;
+  loading?: boolean
 }
 
 const variantStyles = {
   primary: "bg-[#4744D8] text-white",
-  secondary: "bg-[#DEE5FC] text-[#C8CCFF]",
+  secondary: "bg-[#D5D8EA] text-[#8D91AA]",
 };
 
 const sizeStyles = {
@@ -27,7 +28,7 @@ const Button = (props: ButtonProps) => {
       onClick={props.onClick}
       className={`${variantStyles[props.variant]} ${defaultStyle} ${
         sizeStyles[props.size]
-      } `}
+      } ${props.loading} ? "opacity-45" : ""`} disabled={props.loading}
     >
       {props.startIcon} {props.text}
     </button>

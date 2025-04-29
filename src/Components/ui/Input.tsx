@@ -1,15 +1,16 @@
-const Input = ({
-  onChange,
-  placehloder,
-}: {
+interface InputProps {
   placehloder: string;
-  onChange: () => void;
-}) => {
+  ref?: any
+}
+
+const Input = ({
+  placehloder,ref
+}: InputProps) => {
   return (
     <input
-      className="px-4 py-2 border outline-none rounded m-2"
+      className="px-4 py-2 border border-zinc-200 outline-none rounded m-2"
       placeholder={placehloder}
-      onChange={onChange}
+      ref={ref}
       type="text"
     />
   );

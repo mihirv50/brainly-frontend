@@ -9,7 +9,7 @@ interface CardProps {
 }
 const Card = (props: CardProps) => {
   return (
-    <div className="max-w-72 p-4 bg-white border-gray-200 min-h-48 min-w-72">
+    <div className="max-w-72 p-4 bg-white border-gray-200 min-h-48 min-w-72 shadow-2xl rounded-xl">
       <div className="toppart flex justify-between mb-4">
         <div className="flex gap-2 items-center">
           <DocIcon />
@@ -26,7 +26,7 @@ const Card = (props: CardProps) => {
         {props.type === "youtube" && (
           <iframe
             className="w-full mt-4"
-            src={props.link.replace("watch","embed").replace("?v=","/")}
+            src={props.link.replace("watch", "embed").replace("?v=", "/")}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -38,7 +38,7 @@ const Card = (props: CardProps) => {
         {/* if tweet */}
         {props.type === "twitter" && (
           <blockquote className="twitter-tweet">
-            <a href={props.link.replace("x.com","twitter.com")}>
+            <a href={props.link.replace("x.com", "twitter.com")}>
               February 9, 2025
             </a>
           </blockquote>
