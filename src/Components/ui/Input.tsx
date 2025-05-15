@@ -1,6 +1,7 @@
 interface InputProps {
   placehloder: string;
-  ref?: any
+  ref?: any;
+  type?:string
 }
 
 const Input = ({
@@ -11,7 +12,7 @@ const Input = ({
       className="px-4 py-2 border border-zinc-200 outline-none rounded m-2"
       placeholder={placehloder}
       ref={ref}
-      type="text"
+      type={"text"}
     />
   );
 };
